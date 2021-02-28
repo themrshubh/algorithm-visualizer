@@ -15,7 +15,10 @@
   export default {
     data() {
       return {
-        algorithms: [{ name: 'Linear Search', link: '/linear-search' }],
+        algorithms: [
+          { name: 'Linear Search', link: '/linear-search' },
+          { name: 'Binary Search', link: '/binary-search' },
+        ],
       }
     },
   }
