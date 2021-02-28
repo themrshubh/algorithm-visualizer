@@ -13,11 +13,11 @@
     <hr />
     <div class="row mb-3">
       <div class="col p-md-3">
-        In computer science, a linear search or sequential search is a method
-        for finding an element within a list. It sequentially checks each
-        element of the list until a match is found or the whole list has been
-        searched. Below, the input array elements must be comma seperated. All
-        values are interpreted as strings.
+        Linear search or sequential search is a method for finding an element
+        within a list. It sequentially checks each element of the list until a
+        match is found or the whole list has been searched. Below, the input
+        array elements must be comma seperated. All values are interpreted as
+        strings.
       </div>
     </div>
     <div class="row g-2">

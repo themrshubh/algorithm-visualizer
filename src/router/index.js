@@ -16,6 +16,11 @@ const routes = [
     component: () => import('../views/LinearSearch.vue'),
   },
   {
+    path: '/binary-search',
+    name: 'BinarySearch',
+    component: () => import('../views/BinarySearch.vue'),
+  },
+  {
     path: '/*',
     name: 'NotFound',
     component: () => import('../views/NotFound.vue'),
