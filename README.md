@@ -1,24 +1,9 @@
-# app
+# Algorithm Visualizer
 
-## Project setup
-```
-npm install
-```
+This projects helps visualize most common algorithms.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+It currently has the following algorithms, and more will be added soon.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+1. Linear Search
+2. Binary Search
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
