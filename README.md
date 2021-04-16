@@ -2,8 +2,11 @@
 
 This projects helps visualize most common algorithms.
 
-It currently has the following algorithms, and more will be added soon.
+![](demo/binary-search.gif)
+
+It currently has the following algorithms.
 
 1. Linear Search
 2. Binary Search
 
+> This repository is a work in progress
