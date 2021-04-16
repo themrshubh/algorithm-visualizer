@@ -37,14 +37,7 @@
     </div>
     <div class="row">
       <div class="col-sm-4 p-3">
-        <div
-          v-if="message != null"
-          :class="[
-            { 'text-warning': message.type == 'err' },
-            { 'text-success': message.type == 'yes' },
-            { 'text-danger': message.type == 'nop' },
-          ]"
-        >
+        <div v-if="message != null" :class="['text-' + message.type]">
           {{ message.body }}
         </div>
       </div>
@@ -100,19 +93,19 @@
             if (this.key.trim() === arr[i].trim()) {
               this.index = i
               this.message = {
-                type: 'yes',
+                type: 'success',
                 body: `${this.key.trim()} found at index ${this.index}`,
               }
               return
             }
           }
           this.message = {
-            type: 'nop',
+            type: 'danger',
             body: `${this.key} not found`,
           }
         } catch (err) {
           this.message = {
-            type: 'err',
+            type: 'danger',
             body: 'Please check your input.',
           }
         }

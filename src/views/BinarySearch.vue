@@ -38,11 +38,7 @@
       <div class="col-sm-4 p-3">
         <div
           v-if="message != null"
-          :class="[
-            { 'text-warning': message.type == 'err' },
-            { 'text-success': message.type == 'yes' },
-            { 'text-danger': message.type == 'nop' },
-          ]"
+          :class="['text-' + message.type]"
         >
           {{ message.body }}
         </div>
@@ -87,21 +83,6 @@
       }
     },
 
-    // computed: {
-    //   arr() {
-    //     try {
-    //       let arr = []
-    //       let temp = this.input.split(',')
-    //       for (let i = 0; i < temp.length; i++) {
-    //         arr.push(Number(temp[i].trim()))
-    //       }
-    //       return arr
-    //     } catch (err) {
-    //       return []
-    //     }
-    //   },
-    // },
-
     watch: {
       input(newValue) {
         try {
@@ -114,7 +95,7 @@
         } catch (err) {
           this.arr = []
           this.message = {
-            type: 'err',
+            type: 'danger',
             body: 'Bad input',
           }
         }
@@ -136,7 +117,7 @@
             if (arr[this.mid] == key) {
               this.index = this.mid
               this.message = {
-                type: 'yes',
+                type: 'success',
                 body: `${key} found at index ${this.mid}.`,
               }
               return
@@ -148,13 +129,13 @@
           }
 
           this.message = {
-            type: 'nop',
+            type: 'danger',
             body: `${key} not found in the input.`,
           }
         } catch (err) {
           console.log(err)
           this.message = {
-            type: 'err',
+            type: 'danger',
             body: 'Some error has occured',
           }
         }

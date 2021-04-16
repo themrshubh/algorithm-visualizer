@@ -25,7 +25,7 @@
     <div class="row g-2">
       <div class="col-md-6">
         <label for="input" class="form-label">Input Array</label>
-        <input v-model="input" type="text" name="input" class="form-control" />
+        <input v-model="input" typee="text" name="input" class="form-control" />
       </div>
       <div class="col-md-3 d-flex align-items-end">
         <button class="btn btn-success" @click="insertionSort">
@@ -36,7 +36,7 @@
     <!-- Message -->
     <div class="row">
       <div class="col-sm-4 p-3">
-        <div v-if="message != null" :class="['text-' + message.typ]">
+        <div v-if="message != null" :class="['text-' + message.type]">
           {{ message.body }}
         </div>
       </div>
@@ -66,7 +66,7 @@
         input: '',
         inputArray: [],
         message: {
-          typ: 'info',
+          type: 'info',
           body: 'Expects comma seperated integers as input',
         },
         current: null,
@@ -97,7 +97,7 @@
         }
         this.message = {
           body: 'Done',
-          typ: 'success',
+          type: 'success',
         }
       },
 
