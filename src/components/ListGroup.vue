@@ -18,6 +18,7 @@
         algorithms: [
           { name: 'Linear Search', link: '/linear-search' },
           { name: 'Binary Search', link: '/binary-search' },
+          { name: 'Insertion Sort', link: '/insertion-sort' },
         ],
       }
     },

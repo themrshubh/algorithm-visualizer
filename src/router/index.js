@@ -21,6 +21,11 @@ const routes = [
     component: () => import('../views/BinarySearch.vue'),
   },
   {
+    path: '/insertion-sort',
+    name: 'InsertionSort',
+    component: () => import('../views/InsertionSort.vue'),
+  },
+  {
     path: '/*',
     name: 'NotFound',
     component: () => import('../views/NotFound.vue'),
