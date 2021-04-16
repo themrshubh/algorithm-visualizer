@@ -36,10 +36,7 @@
     </div>
     <div class="row">
       <div class="col-sm-4 p-3">
-        <div
-          v-if="message != null"
-          :class="['text-' + message.type]"
-        >
+        <div v-if="message != null" :class="['text-' + message.type]">
           {{ message.body }}
         </div>
       </div>
